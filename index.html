@@ -14,9 +14,18 @@
 <div class="container">
     <a href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj">pCloud - Public Files</a><br>
     <a href="./demo/">Demo</a>
-    
+
+
 </div>
 
+<script type="text/javascript">
+    const testFolder = './demo/';
+    const fs = require('fs');
+
+    fs.readdirSync(testFolder).forEach(file => {
+        console.log(file);
+    });
+</script>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
