@@ -41,15 +41,7 @@
         }
 
     </style>
-	<script type="text/javascript">
 
- $(document).ready(function() {
-    $('#example').DataTable( {
-        "ajax": './arrays.txt'
-    } );
-} );
-
-	</script>
 	
 
 </head>
@@ -91,11 +83,11 @@
     <script type="text/javascript" src=" https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
     <script>
-$(document).ready(function() {
-    $('#example').DataTable( {
-        "ajax": '../ajax/data/arrays.txt'
-    } );
-} );
+		 $(document).ready(function() {
+			$('#example').DataTable( {
+				"ajax": './arrays.txt'
+			} );
+		} );
     </script>
 
 </body>
