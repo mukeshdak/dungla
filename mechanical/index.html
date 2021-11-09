@@ -5,9 +5,10 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" />
- <!--   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css" /> -->
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <style type="text/css">
        
             .grid tr:nth-child(even) {
@@ -42,6 +43,13 @@
 
     </style>
 	<script type="text/javascript">
+	    <script>
+            $.get('header.html',function(response){
+                $('#header').html(response);
+            });
+        </script>
+	
+	
 	var dataSet = [
     [ "Bootstrap Starter template", "Bootstrap-5", "<a href='./bootstrap_starter_template/index.html'>Go</a>", "Starter page for Bootstrap 5."],
     [ "DataTable", "DataTable", "<a href='./datatable/index.html'>Go</a>", "DtataTable demo"],
@@ -55,7 +63,7 @@
 </head>
 <body>
     <div class="container">
-	
+	  <div id='header' ></div>
 	<div class="row my-3">	
 	<h2><a href="..">Home</a></h2><div class="pull-right">Mechanical</div>
 	</div>
@@ -75,7 +83,7 @@
 
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   
     <script type="text/javascript" src=" https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
     <script>
