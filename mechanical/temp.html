@@ -1,117 +1,24 @@
-﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" />
- <!--   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css" /> -->
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
-	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <style type="text/css">
-       
-            .grid tr:nth-child(even) {
-                background: #fff
-            }
-
-            .grid tr:nth-child(odd) {
-                background: #f9fafa
-            }
-
-            .grid td {
-                border: 1px solid #e4e4e4;
-                color: #000;
-                font-size: 13px;
-                 height:10px;
-            }
-
-            .grid th {
-                background: #fff;
-                text-align: center;
-                color: #000;
-                height:10px;
-                font-size: 13px;
-                font-weight: 600;
-                border: 1px solid #e4e4e4;
-            }
-
-
-        .gv {
-           /* overflow-x: scroll; */
-        }
-
-    </style>
-	<script type="text/javascript">
-	var dataSet = [
-    [ "Bootstrap Starter template", "Bootstrap-5", "<a href='./bootstrap_starter_template/index.html'>Go</a>", "Starter page for Bootstrap 5."],
-    [ "DataTable", "DataTable", "<a href='./datatable/index.html'>Go</a>", "DtataTable demo"],
-	[ "DataTable", "DataTable", "<a href='./datatable/index.html'>Go</a>", "DtataTable demo"]
-];
- 
- $(document).ready(function() {
-    $("#lesen").click(function() {
-        $.ajax({
-            url : "./helloworld.txt",
-            dataType: "text",
-            success : function (data) {
-                $(".text").html(data);
-            }
-        });
-    });
-});
-
-	</script>
-	
-
+  <meta charset="utf-8">
+  <title>load demo</title>
+  <style>
+  body {
+    font-size: 12px;
+    font-family: Arial;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
-temp
-
-<div class="text">
-    Lorem Ipsum <br />
-</div>
-
-<p>
-
-    <div class="container">
-	
-	<div class="row my-3">	
-	<h2><a href="..">Home</a></h2><div class="pull-right">Mechanical</div>
-	</div>
-	<div class="row my-3 text-center">
-	Mechanical
-	</div>
-	
-        <div class="row">
-            <div class="col-md-12">
-                <div class="gv">
-                    <table id="example" class="display" width="100%"></table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <script type="text/javascript" src=" https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-$(document).ready(function() {
-    $('#example').DataTable( {
-        data: dataSet,
-        columns: [
-            { title: "Name" },
-            { title: "Category" },
-            { title: "Link" },
-            { title: "Description" }
-        ]
-    } );
-} );
-
-
-    </script>
-
+ 
+<b>Projects:</b>
+<ol id="new-projects"></ol>
+ 
+<script>
+$( "#new-projects" ).load( "helloworld.txt #projects li" );
+</script>
+ 
 </body>
 </html>
