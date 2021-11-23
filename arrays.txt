@@ -1,9 +1,31 @@
 {
   "data": [
-    [ "General", "Public files", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj", "★★★★", "★★★★"],
-    [ "Dungla", "Demo", "./demo/", "★★★★", "Demo files on Dungla"],
-    [ "Dungla", "Mechanical", "./mechanical/", "★★★★", "Symbols may be copied easily"],
-    [ "file-hosting-service", "pCloud", "https://my.pcloud.com", "★★★★", "Good"],
-    [ "Dungla", "Edit this page", "https://github.com/mukeshdak/dungla/edit/main/arrays.txt", "★★★★", "To edit thsese links."]
+['General', 'Public files pCloud', 'https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj', '★★★★', 'Test'],
+['Dungla', 'Demo', './demo/', '★★★★', 'Test'],
+['Dungla', 'Mechanical', './mechanical/', '★★★★', 'Test'],
+['Dungla', 'Edit this page', 'https://github.com/mukeshdak/dungla/edit/main/arrays.txt', '★★★★', 'Test'],
+['file-hosting-service', 'pCloud', 'https://my.pcloud.com', '★★★★', 'Test'],
+['pCloud', 'Resources', 'https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/temp.html', '★★★★', 'Test'],
+['pCloud', 'Resource files', 'https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/resources/', '★★★★', 'Test'],
+['pCloud', 'Images', 'https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/images/', '★★★★', 'Test'],
+['file-hosting-service', 'pCloud', 'http://pcloud.com', '★★★★', 'Test'],
+['file-hosting-service', 'DropBox', 'http://dropbox.com', '★★★★', 'Test'],
+['file-hosting-service', 'Google Drive', 'http://drive.google.com', '★★★★', 'Test'],
+['file-hosting-service', 'Data Storage Service', 'http://socialcompare.com/en/comparison/online-data-storage-services-57fqh3rw#', '★★★★', 'Test'],
+['MD_websites', '9f.biz', 'http://9f.biz', '★★★★', 'Test'],
+['MD_websites', 'Barisadri', 'http://barisadri.com', '★★★★', 'Test'],
+['MD_websites', 'Bhulo', 'http://bhulo.com', '★★★★', 'Test'],
+['MD_websites', 'Dak9', 'http://dak9.com', '★★★★', 'Test'],
+['MD_websites', 'Dungla', 'http://dungla.com', '★★★★', 'Test'],
+['MD_websites', 'mukeshdak', 'http://mukeshdak.com', '★★★★', 'Test'],
+['MD_websites', 'Nimbahera', 'http://nimbahera.com', '★★★★', 'Test'],
+['MD_websites', 'reena.in', 'http://reena.in', '★★★★', 'Test'],
+['MD_websites', 'Pastebin MD', 'http://pastebin.com/mukeshdak', '★★★★', 'Test'],
+['file-hosting-service', 'Hosting files', 'http://socialcompare.com/en/comparison/online-data-storage-services-57fqh3rw#', '★★★★', 'Test'],
+['Dungla', 'WordPress Blog', 'http://dungla.wordpress.com', '★★★★', 'Test'],
+['Online_services', 'ToDo Microsoft', 'https://to-do.microsoft.com/tasks/', '★★★★', 'Test'],
+['Online_services', 'ToDoLedo', 'https://tasks.toodledo.com/main/', '★★★★', 'Test'],
+['Online_services', 'Pastebi1n', 'http://pastebin.com/reenadak', '★★★★', 'Test']
+
   ]
 }
