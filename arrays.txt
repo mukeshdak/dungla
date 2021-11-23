@@ -3,7 +3,7 @@
     [ "General", "Public files", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj", "★★★★", "★★★★"],
     [ "Dungla", "Demo", "./demo/", "★★★★", "Demo files on Dungla"],
     [ "Dungla", "Mechanical", "./mechanical/", "★★★★", "Symbols may be copied easily"],
-    [ "file-hosting-service", "pCloud", "https://my.pcloud.com", "good", "★★★★"],
-    [ "note-taking-service", "pastebin", "https://pastebin.com/u/mukeshdak#", "md pastebin", "★★★★"]
+    [ "file-hosting-service", "pCloud", "https://my.pcloud.com", "★★★★", "Good"],
+    [ "Dungla", "Edit this page", "https://github.com/mukeshdak/dungla/edit/main/arrays.txt", "★★★★", "To edit thsese links."]
   ]
 }
