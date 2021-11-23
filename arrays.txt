@@ -1,10 +1,9 @@
 {
   "data": [
-	[ "Note-taking-service", "Diaro Apps", "https://diaroapp.com", "★★★★", "★★★★"],
-    [ "Note-taking-service", "Just Notepad", "https://justnotepad.com", "★★★★", "★★★★"],
-    [ "online-service", "Symbol Copy", "https://www.symbolcopy.com", "Symbols may be copied easily.", "★★★★"],
+    [ "General", "Public files", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj", "★★★★", "★★★★"],
+    [ "Dungla", "Demo", "./demo/", "★★★★", "Demo files on Dungla"],
+    [ "Dungla", "Mechanical", "./mechanical/", "★★★★", "Symbols may be copied easily"],
     [ "file-hosting-service", "pCloud", "https://my.pcloud.com", "good", "★★★★"],
-	[ "note-taking-service", "pastebin", "https://pastebin.com/u/mukeshdak#", "md pastebin", "★★★★"]
+    [ "note-taking-service", "pastebin", "https://pastebin.com/u/mukeshdak#", "md pastebin", "★★★★"]
   ]
 }
-
