@@ -25,8 +25,7 @@
 ["Dungla", "WordPress Blog", "http://dungla.wordpress.com", "★★★★", "Test"],
 ["Online_services", "ToDo Microsoft", "https://to-do.microsoft.com/tasks/", "★★★★", "Test"],
 ["Online_services", "ToDoLedo", "https://tasks.toodledo.com/main/", "★★★★", "Test"],
-["Online_services", "Pastebi1n", "http://pastebin.com/reenadak", "★★★★", "Test"],
+["Online_services", "Pastebi1n", "http://pastebin.com/reenadak", "★★★★", "Test"]
 
-
-  ]
+]
 }
