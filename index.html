@@ -227,7 +227,7 @@
         cardContainer = document.getElementById("myItems");
         cards = cardContainer.getElementsByClassName("card");
         for (i = 0; i < cards.length; i++) {
-            title = cards[i].querySelector(".card-text, .card-body h5.card-title");
+            title = cards[i].querySelector(".card-text, .card-body h5.card-title, .card-text ul.list-group");
             if (title.innerText.toUpperCase().indexOf(filter) > -1) {
                 cards[i].style.display = "";
             } else {
