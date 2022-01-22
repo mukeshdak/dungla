@@ -162,7 +162,7 @@
     <!--    Starter template ends.-->
 
 </main><!-- /.container -->
-
+<!--.card-body h5.card-title-->
 <script>
     function myFunction() {
         var input, filter, cards, cardContainer, h5, title, i;
@@ -171,7 +171,7 @@
         cardContainer = document.getElementById("myItems");
         cards = cardContainer.getElementsByClassName("card");
         for (i = 0; i < cards.length; i++) {
-            title = cards[i].querySelector(".card-body h5.card-title");
+            title = cards[i].querySelector(".card-text");
             if (title.innerText.toUpperCase().indexOf(filter) > -1) {
                 cards[i].style.display = "";
             } else {
