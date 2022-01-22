@@ -58,9 +58,9 @@
     <div class="col-sm-12 mb-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><a href="#">Card One</a></h5>
+          <h5 class="card-title"><a href="#">Demo</a></h5>
           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some text.</p>
+          <p class="card-text"><a href="./demo">Demo</a> files</p>
         </div>
       </div>
 
@@ -127,7 +127,6 @@
 <div class="container1">
     <div class="col-md-12">
 
-"Dungla", "Demo", "./demo/", "★★★★", "Test",
 "Dungla", "Mechanical", "./mechanical/", "★★★★", "Test",
 "Dungla", "Softwares", "./softwares.html", "★★★★", "Windows Softwares",
 "Dungla", "Edit this page", "https://github.com/mukeshdak/dungla/edit/main/arrays.txt", "★★★★", "Test",
