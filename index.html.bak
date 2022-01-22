@@ -59,36 +59,17 @@
 <div class="container">
     <div class="col-md-12">
         <div class="gv">
-"Dungla", "Demo", "./demo/", "★★★★", "Test",
-"Dungla", "Mechanical", "./mechanical/", "★★★★", "Test",
-"Dungla", "Softwares", "./softwares.html", "★★★★", "Windows Softwares",
-"Dungla", "Edit this page", "https://github.com/mukeshdak/dungla/edit/main/arrays.txt", "★★★★", "Test",
-"Dungla", "WordPress Blog", "http://dungla.wordpress.com", "★★★★", "Test",
-"file-hosting-service", "pCloud", "https://my.pcloud.com", "★★★★", "Test",
-"file-hosting-service", "pCloud", "http://pcloud.com", "★★★★", "Test",
-"file-hosting-service", "DropBox", "http://dropbox.com", "★★★★", "Test",
-"file-hosting-service", "Google Drive", "http://drive.google.com", "★★★★", "Test",
-"file-hosting-service", "Data Storage Service", "http://socialcompare.com/en/comparison/online-data-storage-services-57fqh3rw#", "★★★★", "Test",
-"General", "Public files pCloud", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj", "★★★★", "Test",
-"MD_websites", "9f.biz", "http://9f.biz", "★★★★", "Test",
-"MD_websites", "Barisadri", "http://barisadri.com", "★★★★", "Test",
-"MD_websites", "Bhulo", "http://bhulo.com", "★★★★", "Test",
-"MD_websites", "Dak9", "http://dak9.com", "★★★★", "Test",
-"MD_websites", "Dungla", "http://dungla.com", "★★★★", "Test",
-"MD_websites", "mukeshdak", "http://mukeshdak.com", "★★★★", "Test",
-"MD_websites", "Nimbahera", "http://nimbahera.com", "★★★★", "Test",
-"MD_websites", "reena.in", "http://reena.in", "★★★★", "Test",
-"MD_websites", "Pastebin MD", "http://pastebin.com/mukeshdak", "★★★★", "Test",
-"MD_websites", "Pastebi1n", "http://pastebin.com/reenadak", "★★★★", "Test",
-"Online_services", "ToDo Microsoft", "https://to-do.microsoft.com/tasks/", "★★★★", "Test",
-"Online_services", "ToDoLedo", "https://tasks.toodledo.com/main/", "★★★★", "Test",
-"Online_services", "Diaro App", "https://diaroapp.com", "★★★★", "Test",
-"Online_services", "Just Notepad", "https://justnotepad.com", "★★★★", "Test",
-"Online_services", "Symbol Copy", "https://www.symbolcopy.com", "★★★★", "Test",
-"pCloud", "Resources", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/temp.html", "★★★★", "Test",
-"pCloud", "Resource files", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/resources/", "★★★★", "Test",
-"pCloud", "Images", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/images/", "★★★★", "Test"
-
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Resource</th>
+                    <th>Link</th>
+                    <th>Rating</th>
+                    <th>Remark</th>
+                </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </div>
@@ -106,18 +87,18 @@
     $(document).ready(function() {
         $('#example').DataTable( {
             "ajax": './arrays.txt',
-            "columnDefs": 
+            "columnDefs": [
                 {
                     // The `data` parameter refers to the data for the cell (defined by the
                     // `data` option, which defaults to the column being worked with, in
                     // this case `data: 0`.
                     "render": function ( data, type, row ) {
-                        return '<a href="'+row2+'">'+data+'</a>';
+                        return '<a href="'+row[2]+'">'+data+'</a>';
                     },
                     "targets": 1
                 },
-                { "visible": false,  "targets": 2 }
-            
+                { "visible": false,  "targets": [2] }
+            ]
         } );
     } );
 </script>
