@@ -37,7 +37,7 @@
 
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="myFilter" onkeyup="myFunction()">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
@@ -48,18 +48,13 @@
 <div class="starter-template">
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
-    </div>
-  </div>
   <div class="row" id="myItems">
     <div class="col-sm-12 mb-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><a href="#">Demo</a></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text"><a href="./demo">Demo</a> files</p>
+          <h5 class="card-title">Demo</h5>
+          <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+          <p class="card-text"><a href="./demo/">Demo</a> files</p>
         </div>
       </div>
 
