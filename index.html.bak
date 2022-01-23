@@ -33,9 +33,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./mechanical/index.html">Mechanical</a>
                 </li>
-				<li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./demo/bootstrap/index.html">Mechanical</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://dungla.com/mechanical/temp.html">Temp</a>
                 </li>
@@ -97,7 +94,6 @@
                                 <li class="list-group-item"><a class="link-primary" href="./softwares.html">Softwares</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./demo/">Demo</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./bootstrap.html">Bootstrap-5</a></li>
-								<li class="list-group-item"><a class="link-primary" href="./demo/bootstrap/index.html">Bootstrap-5 Reference</a></li>
                             </ul>
                             </span>
                         </div>

@@ -45,7 +45,7 @@
 	var dataSet = [
     [ "Bootstrap Starter template", "Bootstrap-5", "<a href='./bootstrap_starter_template/index.html'>Go</a>", "Starter page for Bootstrap 5."],
     [ "DataTable", "DataTable", "<a href='./datatable/index.html'>Go</a>", "DtataTable demo"],
-	[ "Bootstrap", "Bootstrap-5", "<a href='./bootstrap/index.html'>Go</a>", "Bootstrap 5 Reference"]
+	[ "DataTable", "DataTable", "<a href='./datatable/index.html'>Go</a>", "DtataTable demo"]
 ];
  
 
