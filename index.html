@@ -9,11 +9,13 @@
         .container {
             padding: 10px;
         }
+
         ul li {
             list-style: none;
         }
+
         a {
-          text-decoration: none !important
+            text-decoration: none !important
         }
     </style>
 
@@ -37,189 +39,134 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./softwares.html">Software</a>
                 </li>
-
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="myFilter"
-                       onkeyup="myFunction()">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="myFilter" onkeyup="myFunction()">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <ul class="navbar-nav me-2 mb-3 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://github.com/mukeshdak/dungla/edit/main/index.html">Edit</a></li>
+            </ul>
         </div>
     </div>
 </nav>
-
-<main role="main" class="container" style="margin-top: 80px;">
+<main role="main" class="container">
+    <!--    style="margin-top: 80px;"-->
     <div class="starter-template">
-
         <div class="container">
-            <div class="row" id="myItems">
+            <div class="row" id="myItems"><!-- This id is required for card filters to work.-->
                 <div class="col-sm-12 mb-3">
                     <div class="card">
                         <div class="card-body">
-<!--                            <h5 class="card-title">Local Links</h5>-->
-                            <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                             <p class="card-text">
-                              <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item list-group-item-light"><span class="list-group-item list-group-item-light">Local</span></li>
-                                <li class="list-group-item"><a href="./mechanical" class="list-group-item list-group-item-danger">Mechanical</a></li>
-                                <li class="list-group-item"><a href="./softwares.html" class="list-group-item list-group-item-danger">Softwares</a></li>
-                                <li class="list-group-item"><a href="./demo/" class="link-primary list-group-item list-group-item-primary">Demo</a></li>
-                                <li class="list-group-item"><a href="https://github.com/mukeshdak/dungla/edit/main/index.html" class="link-secondary list-group-item list-group-item-secondary">Edit Page</a></li>
-                                <li class="list-group-item"><a href="http://dungla.wordpress.com" class="link-primary list-group-item list-group-item-primary">WordPress Blog</a></li>
-                              </ul>
+                            <ul class="list-group list-group-horizontal-md">
+                                <li class="list-group-item">MD Sites</li>
+                                <li class="list-group-item"><a class="link-primary" href="http://9f.biz">9f.biz</a></li>
+                                <li class="list-group-item"><a class="link-secondary" href="http://barisadri.com">Barisadri</a></li>
+                                <li class="list-group-item"><a class="link-warning" href="http://bhulo.com">Bhulo</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://dak9.com">Dak9</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://khushi.science">Khushi.Science</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://mukeshdak.com">MukeshDak</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://nimbahera.com">Nimbahera</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://reena.in">Reena.in</a></li>
+                            </ul>
+                            <ul class="list-group list-group-horizontal-sm">
+                                <li class="list-group-item"><a class="link-primary" href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/">pCloud Public</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/resources/">Resources</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/images/">Images</a></li>
+                                <li class="list-group-item"><a class="link-secondary" href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/snippets">Snippets</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://pastebin.com/u/mukeshdak#">MD Pastebin</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://pastebin.com/u/reenadak#">RD Pastebin</a></li>
+                                <li><a class="list-group-item list-group-item-primary" href="http://dungla.wordpress.com">dungla.wp.com</a></li>
+                            </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-body">
-<!--                            <h5 class="card-title">General</h5>-->
-<!--                            <h6 class="card-subtitle mb-2 text-muted">Sundry items</h6>-->
+                            <!-- <h5 class="card-title">Local Links</h5>-->
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <span class="card-text">
+                            <ul class="list-group list-group-horizontal-md">
+                                <li class="list-group-item">Local</li>
+                                <li class="list-group-item"><a class="link-primary" href="./mechanical">Mechanical</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="./softwares.html">Softwares</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="./demo/">Demo</a></li>
+                            </ul>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <!--                            <h5 class="card-title">General</h5>-->
+                            <!--                            <h6 class="card-subtitle mb-2 text-muted">Sundry items</h6>-->
                             <p class="card-text">
-                          <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item list-group-item-light"><span class="list-group-item list-group-item-light">General</span></li>
-                            <li class="list-group-item"><a href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/vocabulary/" class="list-group-item list-group-item-danger mdl">Vocabulry</a></li>
-                            <li class="list-group-item"><a href="https://diaroapp.com" class="link-primary list-group-item list-group-item-primary">Diaro App</a></li>
-                            <li class="list-group-item"><a href="https://justnotepad.com" class="link-secondary list-group-item list-group-item-secondary">Just Notepad</a></li>
-                            <li class="list-group-item"><a href="https://www.symbolcopy.com" class="link-primary list-group-item list-group-item-primary">Symbol Copy</a></li>
-                          </ul>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item list-group-item-light"><span
+                                        class="list-group-item list-group-item-light">General</span></li>
+                                <li class="list-group-item"><a
+                                        href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/vocabulary/"
+                                        class="list-group-item list-group-item-danger mdl">Vocabulry</a></li>
+                                <li class="list-group-item"><a href="https://diaroapp.com"
+                                                               class="link-primary list-group-item list-group-item-primary">Diaro
+                                    App</a></li>
+                                <li class="list-group-item"><a href="https://justnotepad.com"
+                                                               class="link-secondary list-group-item list-group-item-secondary">Just
+                                    Notepad</a></li>
+                                <li class="list-group-item"><a href="https://www.symbolcopy.com"
+                                                               class="link-primary list-group-item list-group-item-primary">Symbol
+                                    Copy</a></li>
+                            </ul>
                             </p>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">File Hosting Services</a></h5>
+                            <p class="card-text">
+                            <ul class="list-group list-group-horizontal-md">
+                                <li class="list-group-item">File Hosting, BS5 Reference</li>
+                                <li class="list-group-item"><a href="http://pcloud.com" class="link-primary">pCloud</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://dropbox.com" >Dropbox</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="http://drive.google.com" >Google Drive</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://icedrive.net">IceDrive</a></li>
+                                <li class="list-group-item"><a class="link-primary" href="https://my.pcloud.com">pCloud</a></li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+<!--                            <h5 class="card-title"><a href="#">Card Five</a></h5>-->
 <!--                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
                             <p class="card-text">
-                          <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">File Hosting Services</li>
-                            <li class="list-group-item"><a href="http://pcloud.com" class="link-primary">pCloud</a></li>
-                            <li class="list-group-item"><a href="https://my.pcloud.com" class="link-primary">My pCloud</a></li>
-                            <li class="list-group-item"><a href="http://dropbox.com" class="link-primary">Dropbox</a></li>
-                            <li class="list-group-item"><a href="http://drive.google.com" class="link-primary">Google Drive</a></li>
-                            <li class="list-group-item"><a href="https://icedrive.net" class="link-primary">IceDrive</a></li>
-                          </ul>
+                            <ul class="list-group list-group-horizontal-md">
+                                <li class="list-group-item">Useful Apps</li>
+                                <li class="list-group-item"><a href="https://to-do.microsoft.com/tasks/"
+                                                               class="link-primary">Tasks</a></li>
+                                <li class="list-group-item"><a href="https://tasks.toodledo.com/main/"
+                                                               class="link-primary">Todoledo</a></li>
+                                <li class="list-group-item"><a href="demo/index.html" class="link-primary">demo</a></li>
+                            </ul>
                             </p>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Links</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">
-                          <ul class="list-group list-group-horizontal-sm">
-                            <li class="list-group-item"><a href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/resources/" class="link-primary mdl">Resource Files</a></li>
-                            <li class="list-group-item"><a href="https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/images/" class="link-primary mdl">Images</a></li>
-                            <li class="list-group-item"><a href="all/snippets" class="link-secondary">Snippets</a></li>
-                            <li class="list-group-item"><a href="https://www.symbolcopy.com" class="link-warning">Symbol Copy</a></li>
-                            <li class="list-group-item"><a href="https://my.pcloud.com" class="link-primary">pCloud</a></li>
-                            <li class="list-group-item"><a href="https://pastebin.com/u/mukeshdak#" class="link-primary">my Pastebin</a></li>
-                          </ul>
-                          <br>
-                          <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">File Hosting</li>
-                            <li class="list-group-item"><a href="http://pcloud.com" class="link-primary">pCloud</a></li>
-                            <li class="list-group-item"><a href="http://dropbox.com" class="link-secondary">Dropbox</a></li>
-                            <li class="list-group-item"><a href="http://drive.google.com" class="link-warning">Google Drive</a></li>
-                            <li class="list-group-item"><a href="https://my.pcloud.com" class="link-primary">pCloud</a></li>
-                          </ul>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Five</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">
-                          <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">Useful Apps</li>
-                            <li class="list-group-item"><a href="https://to-do.microsoft.com/tasks/" class="link-primary">Tasks</a></li>
-                            <li class="list-group-item"><a href="https://tasks.toodledo.com/main/" class="link-primary">Todoledo</a></li>
-                            <li class="list-group-item"><a href="demo/index.html" class="link-primary">demo</a></li>
-                          </ul>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Websites</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">
-                          <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">My WebSites</li>
-                            <li class="list-group-item"><a href="http://9f.biz" class="link-primary">9f.biz</a></li>
-                            <li class="list-group-item"><a href="http://barisadri.com" class="link-secondary">Barisadri</a></li>
-                            <li class="list-group-item"><a href="http://bhulo.com" class="link-warning">Bhulo</a></li>
-                            <li class="list-group-item"><a href="https://dungla.com" class="link-primary">Dungla</a></li>
-                            <li class="list-group-item"><a href="http://dak9.com" class="link-primary">Dak9</a></li>
-                            <li class="list-group-item"><a href="http://mukeshdak.com" class="link-primary">MukeshDak</a></li>
-                            <li class="list-group-item"><a href="http://nimbahera.com" class="link-primary">Nimbahera</a></li>
-                            <li class="list-group-item"><a href="http://reena.in" class="link-primary">Reena.in</a></li>
-                          </ul>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Seven</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">
-                          <ul class="list-group list-group-horizontal-md">
-                            <li class="list-group-item">My Sites</li>
-                            <li class="list-group-item"><a href="https://pastebin.com/u/mukeshdak#" class="link-primary">MD Pastebin</a></li>
-                            <li class="list-group-item"><a href="https://pastebin.com/u/reenadak#" class="link-primary">RD Pastebin</a></li>
-                          </ul>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Eight</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                        </div>
-                    </div>
+<!--                    <div class="card">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title"><a href="#">Card Eight</a></h5>-->
+<!--                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+<!--                            <p class="card-text">Some text.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
-        </div>
 
-
-        <div class="container1">
-            <div class="col-md-12">
-                "http://socialcompare.com/en/comparison/online-data-storage-services-57fqh3rw#", "★★★★", "Test",
-                "General", "Public files pCloud", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj", "★★★★", "Test",
-                "MD_websites", "9f.biz", "http://9f.biz", "★★★★", "Test",
-                "MD_websites", "Barisadri", "http://barisadri.com", "★★★★", "Test",
-                "MD_websites", "Bhulo", "http://bhulo.com", "★★★★", "Test",
-                "MD_websites", "Dak9", "http://dak9.com", "★★★★", "Test",
-                "MD_websites", "Dungla", "http://dungla.com", "★★★★", "Test",
-                "MD_websites", "mukeshdak", "http://mukeshdak.com", "★★★★", "Test",
-                "MD_websites", "Nimbahera", "http://nimbahera.com", "★★★★", "Test",
-                "MD_websites", "reena.in", "http://reena.in", "★★★★", "Test",
-                "MD_websites", "Pastebin MD", "http://pastebin.com/mukeshdak", "★★★★", "Test",
-                "MD_websites", "Pastebi1n", "http://pastebin.com/reenadak", "★★★★", "Test",
-                "Online_services", "ToDo Microsoft", "https://to-do.microsoft.com/tasks/", "★★★★", "Test",
-                "Online_services", "ToDoLedo", "https://tasks.toodledo.com/main/", "★★★★", "Test",
-                "Online_services", "Diaro App", "https://diaroapp.com", "★★★★", "Test",
-                "Online_services", "Just Notepad", "https://justnotepad.com", "★★★★", "Test",
-                "Online_services", "Symbol Copy", "https://www.symbolcopy.com", "★★★★", "Test",
-                "pCloud", "Resources", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/temp.html", "★★★★", "Test",
-                "pCloud", "Resource files", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/resources/", "★★★★", "Test",
-                "pCloud", "Images", "https://filedn.com/lhbzwIxL7ln0Mv4MLocirTj/all/images/", "★★★★", "Test"
-
-            </div>
-        </div>
-
-
-    </div>
-    <!--    Starter template ends.-->
-
+        </div><!-- Container ends here-->
+    </div><!--    Starter template ends.-->
 </main><!-- /.container -->
 
 <script>
