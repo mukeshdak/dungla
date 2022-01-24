@@ -61,7 +61,6 @@
                                 <li class="list-group-item"><a class="link-primary" href="./grid/index.html">Grid</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./headers/index.html">Headers</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./heroes/index.html">Heroes</a></li>
-								<li class="list-group-item"><a class="link-primary" href="./hstack-and-vstack/index.html">Hstack and Vstack</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./jumbotron/index.html">Jumbotron</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./masonry/index.html">Masonry</a></li>
                                 <li class="list-group-item"><a class="link-primary" href="./navbar-bottom/index.html">navbar-bottom</a></li>
