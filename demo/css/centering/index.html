@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centering horizontally and vertically.</title>
+    <style type="text/css">
+        *, ::before, ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #333;
+            font-family: Arial, Helvetica, SansSerif;
+        }
+        .container {
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+        }
+
+        h2{color: white;}
+
+        .c1{ background: salmon;}
+        .c2{ background: lightblue;}
+        .c3{ background: lightgreen;}
+        .c4{ background: khaki;}
+        .c5{ background: sandybrown;}
+        .c6{ background: slateblue;}
+
+        /*
+Find 6 ways to have the "Center me" text centered on X and Y.
+Horizontally and vertically.
+*/
+        /* 1 */
+
+        .c1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c1 h1 {
+
+        }
+
+
+        /* 2 */
+
+        .c2 {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+        .c2 h1 {
+
+        }
+
+
+        /* 3 */
+
+        .c3 {
+
+        }
+        .c3 h1{
+
+        }
+
+
+        /* 4 */
+
+        .c4 {
+
+        }
+        .c4 h1 {
+
+        }
+
+
+        /* 5 */
+
+        .c5 {
+
+        }
+        .c5 h1 {
+
+        }
+
+
+        /* 6 */
+
+        .c6 {
+
+        }
+        .c6 h1 {
+
+        }
+    </style>
+</head>
+<body>
+<h2>Align following boxes header vertically and horizontally.</h2>
+
+<div class="container c1">
+    <h1>Center me</h1>
+</div>
+<div class="container c2">
+    <h1>Center me</h1>
+</div>
+<div class="container c3">
+    <h1>Center me</h1>
+</div>
+<div class="container c4">
+    <h1>Center me</h1>
+</div>
+<div class="container c5">
+    <h1>Center me</h1>
+</div>
+<div class="container c6">
+    <h1>Center me</h1>
+</div>
+</body>
+</html>
