@@ -59,10 +59,14 @@ Horizontally and vertically.
         /* 3 */
 
         .c3 {
-
+            position: relative;
         }
         .c3 h1{
-
+            position: absolute;
+            /* This is important to be absolute, so as to take reference from parent. */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
 
