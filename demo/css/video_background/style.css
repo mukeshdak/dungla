@@ -6,7 +6,7 @@
 
 body {
     font-family: roboto, sans-serif;
-    
+
 }
 
 .home {
@@ -34,7 +34,7 @@ h1 {
     line-height: 1.1;
 }
 
-.home p{
+.home p {
     font-size: clamp(25px, 4vw, 40px);
     margin-top: 10px;
 }
@@ -49,7 +49,7 @@ h1 {
 
 .home-content button {
     display: block;
-    font-size: clamp(14px, 1.5vw, 18px );
+    font-size: clamp(14px, 1.5vw, 18px);
     border: 1px solid #f1f1f1;
     border-radius: 5px;
     background: transparent;
@@ -57,4 +57,10 @@ h1 {
     margin: 50px auto;
     padding: 12px 20px;
     cursor: pointer;
+}
+
+.home-content button:hover {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.3);
+    background-color: black;
 }
