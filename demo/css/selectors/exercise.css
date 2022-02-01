@@ -2,6 +2,7 @@
 .title.main-title {
     background: khaki;
 }
+/* both classes should be there.
 
 
 
@@ -46,7 +47,9 @@ input[type="text"] {
 
 
 /* 6. Change the background color of the form to "lightblue" only when one of the children receives the focus */
-
+form:focus-within {
+    background-color: lightblue;
+}
 
 
 
@@ -54,21 +57,27 @@ input[type="text"] {
 
 
 /* 7. Select the 4th item from the list and give it a "seagreen" background */
-
+li:nth-child(4){
+    background-color: seagreen;
+}
 
 
 
 
 
 /* 8. Select all li except the 5th and give them a "midnightblue" background */
-
+li:not(:nth-child(5)){
+    background-color: midnightblue;
+}
 
 
 
 
 
 /* 9. Select only links pointing to secure sites (https) and give them a "plum" background */
-
+a[href^="https"]{
+    background-color: plum;
+}
 
 
 
@@ -77,5 +86,10 @@ input[type="text"] {
 
 
 /* 10. Give a "crimson" background color to the first line of the last paragraph and increase the size of its first letter to 50px */
-
+.final-txt::first-line {
+    background-color: crimson;
+}
 /* You need to make two selections */
+.final-txt::first-letter {
+    font-size: 50px;
+}
