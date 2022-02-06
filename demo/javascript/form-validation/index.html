@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Form Validatior by Mukesh Dak</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <form id="form" class="form">
@@ -18,7 +20,7 @@
             </div>
             <div class="form-control">
                 <label for="email">Email</label>
-                <input type="text" name="email" title="email" placeholder="Enter Email" id="email">
+                <input type="email" name="email" title="email" placeholder="Enter Email" id="email">
                 <small>Error message</small>
             </div>
             <div class="form-control">
@@ -30,11 +32,12 @@
                 <label for="password2">Confirm password</label>
                 <input type="password" name="password2" title="password" placeholder="Enter password again"
                     id="password2">
-               <small>Error message</small>
+                <small>Error message</small>
             </div>
-            <button onclick="javascript:validate_form();">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

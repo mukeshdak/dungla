@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #FFF;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     width: 400px;
@@ -107,20 +107,15 @@ h2 {
     /* it has to remain visible in case of success or error. */
 }
 
-.form-control.success small {
-    visibility: visible;
-    color: var(--success-color);
-}
-
 .form button {
     cursor: pointer;
     background-color: var(--button-color);
-    color: white;
+    color: #FFF;
     border: 2px solid var(--button-color);
     border-radius: 4px;
     display: block;
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
 }

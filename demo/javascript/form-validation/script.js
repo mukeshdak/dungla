@@ -1,22 +1,78 @@
 // Javascript for form inputs validation
 
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email.toLowerCase());
+// Pulling DOM elements
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
+
+function showError(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control error";
+  const small = formControl.querySelector("small");
+  small.innerText = message;
 }
 
-function validate_form() {
-  alert("hi");
-  var username = document.getElementById("username").value;
-  email = document.getElementById("email").value;
-  password = document.getElementById("password").value;
-  confirm_password = document.getElementById("confirm_password").value;
+function showSuccess(input) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control success";
+}
 
-  if (username.length < 3) {
-    alert("Username must be at least three characters long.");
-  }
+function checkRequired(inputArray) {
+  inputArray.forEach((input) => {
+    if (input.value.trim() === "") {
+      showError(input, getFieldName(input) + " is Required");
+    } else {
+      showSuccess(input);
+    }
+  });
+}
 
-  if (validateEmail(email) != true) {
-    alert("email entered is invalid");
+function getFieldName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
+function checkLength(input, min, max) {
+  if (input.value.length < min) {
+    showError(
+      input,
+      getFieldName(input) + " must be at least " + min + " characters long."
+    );
+  } else if (input.value.length > max) {
+    showError(
+      input,
+      getFieldName(input) + " must be less than " + max + " characters long."
+    );
+  } else {
+    showSuccess(input);
   }
 }
+
+function checkEmail(input) {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+  if (re.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input, "Email is not valid.");
+  }
+}
+
+function checkPasswordMatch(input1, input2) {
+  if (input1.value !== input2.value) {
+    showError(input2, "Password does not match");
+  }
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  // To ensure that submitted values retained in the fields.
+
+  checkRequired([username, email, password, password2]);
+  checkLength(username, 3, 20);
+  checkLength(password, 3, 20);
+  checkEmail(email);
+  checkPasswordMatch(password, password2);
+});
